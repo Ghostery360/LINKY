@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureLink - Your Cultural Companion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <!-- INTERFACE ACCUEIL -->
+    <div id="home-interface" class="interface active">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="linky.png" alt="Linky Logo" class="logo-svg">
+                    <div class="logo-text" id="logo-text">CultureLink</div>
+                </div>
+            </div>
+            <div class="header-controls">
+                <div class="header-top-controls">
+                    <button class="btn btn-primary" id="download-header-btn">
+                        <i class="fas fa-download"></i>
+                        <span class="btn-text" id="download-text">Download</span>
+                    </button>
+                    <div class="language-selector">
+                        <button class="btn btn-secondary btn-icon language-btn" id="language-toggle">
+                            <span class="flag-icon" id="current-flag">🇬🇧</span>
+                        </button>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <div class="language-option" data-lang="en">
+                                <span class="flag-icon">🇬🇧</span>
+                                <span class="language-text">English</span>
+                            </div>
+                            <div class="language-option" data-lang="fr">
+                                <span class="flag-icon">🐇</span>
+                                <span class="language-text">Français</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="hero">
+            <div class="profile-container">
+                <div class="profile avatar-upload" id="linky-profile">
+                    <img src="linky.png" alt="Linky" class="profile-image" id="linky-avatar">
+                </div>
+            </div>
+            <h1 class="hero-title" id="hero-title">Linky</h1>
+            <h2 class="welcome-text" id="welcome-text">Welcome to CultureLink</h2>
+            <p class="slogan" id="slogan">Where our roots weave connections</p>
+            <p class="hero-description" id="hero-description">Linky — your companion to explore, learn and connect cultures 🇧🇫</p>
+            
+            <p class="chat-instruction" id="chat-instruction">Tap to start a conversation with Linky</p>
+            
+            <div class="paw-btn-container">
+                <button class="paw-btn" id="start-chat-btn">
+                    <i class="fas fa-comments paw-icon"></i>
+                </button>
+            </div>
+
+            <div class="hero-bottom-controls">
+                <button class="btn btn-secondary btn-icon" id="theme-btn">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="btn btn-secondary btn-icon" id="settings-btn">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </main>
+
+        <div class="content-sections">
+            <div class="section">
+                <div class="section-header culture-header">
+                    <h2 class="section-title culture-title">
+                        <i class="fas fa-globe-africa"></i>
+                        <span id="culture-title">Culture & History</span>
+                    </h2>
+                </div>
+                <div class="section-content culture-content">
+                    <p id="culture-content">🌍 Culture unites us despite our differences. With Linky 🐇, discover bridges between worlds — CultureLink, where curiosity becomes dialogue 🌟, and knowledge becomes connection 🤝.</p>
+                    <div class="culture-quote" id="culture-quote">
+                        "Culture is the soul of a people, it unites hearts beyond borders."
+                    </div>
+                </div>
+                <div class="culture-decoration">
+                    <i class="fas fa-monument"></i>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header nature-header">
+                    <h2 class="section-title nature-title">
+                        <i class="fas fa-leaf"></i>
+                        <span id="nature-title">Ecology & Environment</span>
+                    </h2>
+                </div>
+                <div class="section-content nature-content">
+                    <p id="nature-content">🌿 CultureLink 🐇 raises awareness and connects minds to nature. Here, ecology becomes a dialogue between man and Earth 🌎 — a way to learn, protect and live in harmony. 🌱</p>
+                    <div class="culture-quote nature-quote" id="nature-quote">
+                        "Protecting nature means preserving our heritage for future generations."
+                    </div>
+                </div>
+                <div class="nature-decoration">
+                    <i class="fas fa-tree"></i>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header anime-header">
+                    <h2 class="section-title anime-title">
+                        <i class="fas fa-film"></i>
+                        <span id="anime-title">Anime & Entertainment</span>
+                    </h2>
+                </div>
+                <div class="section-content anime-content">
+                    <p id="anime-content">🎬 Explore the captivating world of anime with Linky 🐇. Discover inspiring works, character analysis and personalized recommendations. Dive into stories that transcend cultures 🌟.</p>
+                    <div class="culture-quote anime-quote" id="anime-quote">
+                        "Anime are windows to infinite worlds, where imagination has no limits."
+                    </div>
+                </div>
+                <div class="anime-decoration">
+                    <i class="fas fa-tv"></i>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header learning-header">
+                    <h2 class="section-title learning-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span id="learning-title">Pedagogy & Learning</span>
+                    </h2>
+                </div>
+                <div class="section-content learning-content">
+                    <p id="learning-content">🎓 Linky 🐇 accompanies you in your learning with clear explanations, educational quizzes and personalized help. Every question becomes an open door to knowledge 🌟.</p>
+                    <div class="culture-quote learning-quote" id="learning-quote">
+                        "Learning is a journey we take together, step by step."
+                    </div>
+                </div>
+                <div class="learning-decoration">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+        </div>
+
+        <section class="download-section">
+            <button class="download-btn" id="download-main-btn">
+                <i class="fas fa-download"></i>
+                <span id="download-button-text">Download the Application</span>
+            </button>
+            <p class="developer-note" id="developer-note">CultureLink is designed and developed by passionate young Burkinabés</p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="copyright" id="copyright">
+                    CultureLink 🇧🇫 © 2025 – Application & Web, powered by Linky 🐇
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- INTERFACE CHAT -->
+    <div id="chat-interface" class="interface chat-interface">
+        <header class="chat-header">
+            <div class="chat-left-controls">
+                <button class="btn btn-secondary btn-icon" id="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="chat-center-info">
+                <div class="chat-title">Linky</div>
+                <div class="conversation-name" id="conversation-name-display">New conversation</div>
+            </div>
+            <div class="chat-right-controls">
+                <button class="image-generator-btn" id="image-generator-btn" title="Generate Image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                </button>
+                <div class="conversations-btn">
+                    <button class="btn btn-secondary btn-icon" id="conversations-btn">
+                        <div class="conversations-icon">
+                            <div class="conversations-line"></div>
+                            <div class="conversations-line"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="messages-container" id="messages-container">
+            <!-- Nouvelle conversation -->
+            <div class="new-conversation" id="new-conversation">
+                <h1 class="welcome-title" id="welcome-title">Hello, I'm Linky 🐇</h1>
+                <p class="welcome-subtitle" id="welcome-subtitle">What discovery would you like to make today?</p>
+                
+                <div class="quick-actions" id="quick-actions">
+                    <button class="quick-action-btn" data-message="Hello 👋">
+                        <i class="fas fa-hand"></i>
+                        <span class="quick-action-text" id="quick-action-hello">Hello</span>
+                    </button>
+                    <button class="quick-action-btn" data-message="Tell me about African culture">
+                        <i class="fas fa-globe-africa"></i>
+                        <span class="quick-action-text" id="quick-action-culture">African Culture</span>
+                    </button>
+                    <button class="quick-action-btn" data-message="Generate an image of traditional African art">
+                        <i class="fas fa-image"></i>
+                        <span class="quick-action-text" id="quick-action-image">Generate Image</span>
+                    </button>
+                    <button class="quick-action-btn hidden-action" data-message="Explain ecology to me">
+                        <i class="fas fa-leaf"></i>
+                        <span class="quick-action-text" id="quick-action-ecology">Ecology</span>
+                    </button>
+                    <button class="quick-action-btn hidden-action" data-message="Create an educational quiz for me">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="quick-action-text" id="quick-action-quiz">Educational Quiz</span>
+                    </button>
+                    <button class="quick-action-btn hidden-action" data-message="Recommend me an anime">
+                        <i class="fas fa-film"></i>
+                        <span class="quick-action-text" id="quick-action-anime">Anime Recommendation</span>
+                    </button>
+                    <button class="quick-action-btn more-btn" id="more-actions-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span class="quick-action-text" id="quick-action-more">More</span>
+                    </button>
+                </div>
+                
+                <button class="hello-btn" id="hello-btn">
+                    <span id="start-chatting-text">Start chatting 👋</span>
+                </button>
+                <p class="privacy-notice" id="privacy-notice">
+                    Check our privacy policy to better understand how we protect and process your data.
+                </p>
+            </div>
+
+            <!-- Messages existants (initialement vide) -->
+            <div id="conversation-messages" style="display: none;"></div>
+        </div>
+
+        <div class="scroll-to-bottom" id="scroll-to-bottom">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+
+        <div class="input-container">
+            <div class="input-wrapper" id="input-wrapper">
+                <div class="input-with-image">
+                    <button class="image-generator-btn" id="image-generator-btn-small" title="Generate Image">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </button>
+                    <textarea class="message-input" id="message-input" placeholder="Write to Linky..." rows="1"></textarea>
+                </div>
+                <button class="send-button" id="send-btn">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            <div class="char-count" id="char-count">
+                <span>0</span>
+            </div>
+            <div class="char-limit-warning" id="char-limit-warning">
+                Your message exceeds the maximum limit of 10,000 characters.
+            </div>
+        </div>
+    </div>
+
+    <!-- Conversations Panel -->
+    <div class="conversations-panel" id="conversations-panel">
+        <div class="panel-header">
+            <div class="panel-title" id="conversations-panel-title">Conversations</div>
+            <button class="panel-close" id="panel-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="panel-content">
+            <div class="panel-section">
+                <button class="panel-theme-btn" id="panel-theme-btn">
+                    <i class="fas fa-sun"></i>
+                    <span id="panel-theme-text">Theme</span>
+                </button>
+            </div>
+            
+            <div class="panel-section">
+                <button class="panel-new-chat-btn" id="panel-new-chat-btn">
+                    <i class="fas fa-plus"></i>
+                    <span id="panel-new-chat-text">New Conversation</span>
+                </button>
+            </div>
+            
+            <div class="panel-section">
+                <div class="panel-section-title" id="conversations-list-title">Conversations</div>
+                <div class="conversation-list" id="conversation-list">
+                    <!-- Les conversations seront ajoutées ici dynamiquement -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settings-panel">
+        <div class="panel-header">
+            <div class="panel-title" id="settings-panel-title">Settings</div>
+            <button class="panel-close" id="settings-panel-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="panel-content">
+            <div class="panel-section">
+                <div class="panel-section-title" id="general-settings-title">General</div>
+                <button class="panel-theme-btn" id="settings-theme-btn">
+                    <i class="fas fa-sun"></i>
+                    <span id="settings-theme-text">Theme</span>
+                </button>
+            </div>
+            
+            <div class="panel-section">
+                <div class="panel-section-title" id="about-settings-title">About</div>
+                <button class="panel-theme-btn" id="settings-about-btn">
+                    <i class="fas fa-info-circle"></i>
+                    <span id="settings-about-text">About CultureLink</span>
+                </button>
+                <button class="panel-theme-btn" id="settings-help-btn">
+                    <i class="fas fa-question-circle"></i>
+                    <span id="settings-help-text">Help / Tutorial</span>
+                </button>
+            </div>
+            
+            <div class="panel-section">
+                <div class="panel-section-title" id="privacy-settings-title">Privacy</div>
+                <button class="panel-theme-btn" id="settings-privacy-btn">
+                    <i class="fas fa-shield-alt"></i>
+                    <span id="settings-privacy-text">Privacy Policy</span>
+                </button>
+            </div>
+            
+            <div class="panel-section">
+                <div class="panel-section-title" id="contact-settings-title">Contact</div>
+                <button class="panel-theme-btn" id="settings-contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span id="settings-contact-text">Contact</span>
+                </button>
+                <button class="panel-theme-btn" id="settings-whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span id="settings-whatsapp-text">WhatsApp Version</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="about-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="about-modal-title">About CultureLink</div>
+                <button class="modal-close" id="about-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenu du modal About -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="privacy-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="privacy-modal-title">Privacy Policy</div>
+                <button class="modal-close" id="privacy-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenu du modal Privacy -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="help-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="help-modal-title">Help & Tutorial</div>
+                <button class="modal-close" id="help-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenu du modal Help -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="contact-modal-title">Contact</div>
+                <button class="modal-close" id="contact-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenu du modal Contact -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="whatsapp-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="whatsapp-modal-title">WhatsApp Version of Linky</div>
+                <button class="modal-close" id="whatsapp-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenu du modal WhatsApp -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal pour le générateur d'images -->
+    <div class="modal-overlay image-generator-modal" id="image-generator-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="image-generator-modal-title">Generate Image</div>
+                <button class="modal-close" id="image-generator-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <!-- Contenu du générateur d'images -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay for panels -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
